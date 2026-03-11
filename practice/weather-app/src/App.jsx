@@ -40,10 +40,10 @@ function App() {
           </p>
           <div className="d-flex justify-content-between mt-3">
             <span>
-              <i className="bi bi-water" /> 83%
+              <i className="bi bi-water fs-1" /> 83%
             </span>
             <span>
-              <i className="bi bi-wind" /> 6 km/h
+              <i className="bi bi-wind fs-1" /> 6 km/h
             </span>
           </div>
         </div>
