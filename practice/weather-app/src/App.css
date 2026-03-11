@@ -1,0 +1,80 @@
+body{
+background:#0f172a;
+color:#ffffff;
+font-family:Plus Jakarta Sans;
+}
+
+.weather-left{
+background: linear-gradient(180deg,#1f2937,#111827);
+border-radius:20px;
+}
+
+.weather-right{
+background:#1f2937;
+border-radius:20px;
+}
+
+.day-card{
+background:#111827;
+border-radius:15px;
+transition:0.3s;
+}
+
+.day-card:hover{
+transform:translateY(-5px);
+}
+
+.info-card{
+background:#111827;
+border-radius:15px;
+}
+
+.temp{
+font-size:60px;
+font-weight:bold;
+}
+
+.brwn-color{
+    color: #6A6969;
+}
+
+
+/* Extra small devices (mobile phones) */
+@media (max-width: 575.98px) {
+  /* Mobile layout */
+.color1{
+    height: 100vh;
+}
+    .fsize{
+    font-size: 25px;}
+  .mt-s{
+    
+  margin-top: 48px !important;
+
+  }  
+  
+    
+
+}
+
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Small phones */
+
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Tablets */
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Laptop/Desktop */
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  /* Large desktop */
+} 
