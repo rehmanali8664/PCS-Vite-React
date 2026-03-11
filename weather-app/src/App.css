@@ -63,16 +63,24 @@ body{
   /* Mobile layout */
 .color1{
     height: 100vh;
-.fsize{
-    font-size: 25px;
+}
+    .fsize{
+    font-size: 25px;}
+  .mt-s{
     
+  margin-top: 48px !important;
+
+  }  
+  
+    
+
 }
-}
-}
+
 
 /* Small devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Small phones */
+
 }
 
 /* Medium devices (tablets) */

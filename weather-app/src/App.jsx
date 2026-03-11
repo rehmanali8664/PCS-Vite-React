@@ -45,20 +45,20 @@ function App() {
         </div>
         <hr />
         <div className='container'>
-        <div className="mb-2 primary-color">
+        <div className="mb-md-2 primary-color mt-s">
           <i className="bi bi-cloud-rain me-2 " /> <span className='left-font'>Light Rain</span>
         </div>
-        <div className="mb-2 primary-color">
+        <div className="mb-md-2 primary-color">
           <i className="bi bi-thermometer-low me-2" /><span className='left-font'> Temperature Low - 28°</span>
           <sup>C</sup>
         </div>
-        <div className="mb-3 primary-color">
+        <div className="mb-md-2 primary-color">
           <i className="bi bi-thermometer-high me-2" /><span className='left-font'> Temperature High - 31°</span>
           <sup>C</sup>
         </div>
-        <div className="d-flex justify-content-around card-bg rounded-3">
+        <div className="d-flex justify-content-around card-bg rounded-3 mt-s">
           <div className="d-flex align-items-center">
-            <i className="bi bi-water me-2 text-white fs-1" />
+            <i className="bi bi-water me-md-2 text-white fs-1" />
             <div className="primary-color left-font">
              <b> 83%</b>
               <br />
@@ -206,7 +206,7 @@ function App() {
 </div>
         {/* Precipitation & Sunrise/Sunset */}
         <div className="d-flex justify-content-between">
-          <div>
+          <div className='d-none d-md-block'>
             <div>Precipitation</div>
             <img
               src="Line Chart.png"
@@ -215,7 +215,7 @@ function App() {
               width={300}
             />
           </div>
-          <div>
+          
             <div className='primary-color'>Sunrise &amp; Sunset</div>
             <div className="d-flex align-items-center mb-2  ">
               <i className="bi bi-sunrise me-2 fs-3 icon-color " />
@@ -232,7 +232,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
       </div>
     </div>
