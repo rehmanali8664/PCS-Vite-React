@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="py-3">
+        <div class="container-fluid ms-lg-2">
+            <div class="row column-gap-2"> 
+
+                <!-- 1st column -->
+                <div class="col-12 col-md-2 d-flex flex-column  color1 rounded-4">
+                   <div >
+                    <form class="d-flex mb-3 ms-4 w-75" role="search" >
+                        <div class="input-group">
+                            <span class="input-group-text rounded-start-4 search-color">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input class="form-control rounded-end-4 search-color" type="search"
+                                placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                    </div>
+                    <div class="text-center mb-3">
+                        <img src="assets/images/Weather-image.png" alt="Weather" class="img-fluid mb-2" width="200">
+                        <div class="h1 fw-bold fs-1 text-white">30°<sup>C</sup></div>
+                        <div class="text-white fsize"><span>Kuala Lumpur</span> | <span>Monday</span></div>
+                    </div>
+
+                    <hr>
+
+                    <div class="mb-2 text-white"><i class="bi bi-cloud-rain me-2"></i> Light Rain</div>
+                    <div class="mb-2 text-white"><i class="bi bi-thermometer-low me-2"></i> Temperature Low - 28°<sup>C</sup></div>
+                    <div class="mb-3 text-white"><i class="bi bi-thermometer-high me-2"></i> Temperature High - 31°<sup>C</sup></div>
+
+                    <div class="d-flex justify-content-around">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-water me-2 text-white fs-2"></i>
+                            <div  class="text-white">83%<br>Humidity</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-wind me-2 text-white  fs-2"></i>
+                            <div  class="text-white">6 km/h<br>Wind Speed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd column -->
+                <div class="col-12 col-md-5 color1 rounded-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Today</span>
+                        <span>Week</span>
+                    </div>
+
+                    <!-- 7-day forecast -->
+                    <div class="d-flex justify-content-between mb-4">
+                        <!-- Repeat for each day -->
+                        <div class="d-flex flex-column align-items-center card card-bg text-white">
+                            <div>Sun</div>
+                            <img src="assets/images/1.png" alt="Sun" class="img-fluid mb-1 card-img" >
+                            <div>32°</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center card card-bg text-white">
+                            <div>Mon</div>
+                            <img src="assets/images/2.png" alt="Mon" class="img-fluid mb-1" width="50">
+                            <div>31°</div>
+                        </div>
+                      <div class="d-flex flex-column align-items-center card card-bg text-white">
+                            <div>Tue</div>
+                            <img src="assets/images/3.png" alt="Tue" class="img-fluid mb-1" width="50">
+                            <div>27°</div>
+                        </div>
+                      <div class="d-flex flex-column align-items-center card card-bg text-white">
+                            <div>Wed</div>
+                            <img src="assets/images/4.png" alt="Wed" class="img-fluid mb-1" width="50">
+                            <div>31°</div>
+                        </div>
+                       <div class="d-flex flex-column align-items-center card card-bg text-white">
+                            <div>Thu</div>
+                            <img src="assets/images/5.png" alt="Thu" class="img-fluid mb-1" width="50">
+                            <div>25°</div>
+                        </div>
+                       <div class="d-flex flex-column align-items-center card card-bg text-white">
+                            <div>Fri</div>
+                            <img src="assets/images/5.png" alt="Fri" class="img-fluid mb-1" width="50">
+                            <div>26°</div>
+                        </div>
+                       <div class="d-flex flex-column align-items-center card card-bg text-white">
+                            <div>Sat</div>
+                            <img src="assets/images/4.png" alt="Sat" class="img-fluid mb-1" width="50">
+                            <div>30°</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">Today's Overview</div>
+
+                    <!-- Air Quality, UV, Pressure -->
+                    <div class="d-flex justify-content-between mb-4 ">
+                        <div class="text-center card card-bg1 text-white">
+                            <div>Air Quality Index</div>
+                            <div class="fw-bold">53</div>
+                            <div class="d-flex justify-content-center align-items-center ">
+                                <span class="me-2">Good</span>
+                                <img src="assets/images/air-pollution.png" alt="Air Quality" width="50">
+                            </div>
+                        </div>
+                       <div class="text-center card card-bg1 text-white">
+                            <div>UV Index</div>
+                            <div class="fw-bold">3</div>
+                            <div class="d-flex justify-content-center align-items-center text-white">
+                                <span class="me-2">Moderate</span>
+                                <img src="assets/images/uv.png" alt="UV" width="50">
+                            </div>
+                        </div>
+                        <div class="text-center card card-bg1 text-white">
+                            <div>Pressure (hPa)</div>
+                            <div class="fw-bold">1006</div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <span class="me-2">Normal</span>
+                                <img src="assets/images/barometer.png" alt="Pressure" width="50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Precipitation & Sunrise/Sunset -->
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <div>Precipitation</div>
+                            <img src="assets/images/Line Chart.png" alt="Precipitation" class="img-fluid" width="300">
+                        </div>
+                        <div>
+                            <div>Sunrise & Sunset</div>
+                            <div class="d-flex align-items-center mb-2  ">
+                                <i class="bi bi-sunrise me-2 fs-3 icon-color "></i>
+                                <div>
+                                    <div class=" icon-color">Sunrise</div>
+                                    <div>7:06 AM</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-sunset me-2 fs-3 icon-color"></i>
+                                <div>
+                                    <div class="icon-color">Sunset</div>
+                                    <div>7:03 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd column -->
+<div class="col-12 col-md-4">
+
+    <!-- Row 1 -->
+    <div class="d-flex justify-content-between mb-3">
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/4.png" class="img-fluid mb-1" width="80">
+            <span>Light Rain (day)</span>
+        </div>
+
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/3-2.png" class="img-fluid mb-1" width="80">
+            <span>Light Rain (night)</span>
+        </div>
+
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/5.png" class="img-fluid mb-1" width="80">
+            <span>Heavy Rain</span>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="d-flex justify-content-between mb-3">
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/1.png" class="img-fluid mb-1" width="80">
+            <span>Windy (day)</span>
+        </div>
+
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/windy(night).png" class="img-fluid mb-1" width="80">
+            <span>Windy (Night)</span>
+        </div>
+
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/thunderstorm.png" class="img-fluid mb-1" width="80">
+            <span>Thunder Storm</span>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="d-flex justify-content-between mb-3">
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/2.png" class="img-fluid mb-1" width="80">
+            <span>Clear (day)</span>
+        </div>
+
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/clearnight.png" class="img-fluid mb-1" width="80">
+            <span>Clear (Night)</span>
+        </div>
+
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/cloudy.png" class="img-fluid mb-1" width="80">
+            <span>Cloudy</span>
+        </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="d-flex justify-content-between">
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/windycloud.png" class="img-fluid mb-1" width="80">
+            <span>Windy Cloud</span>
+        </div>
+
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/water.png" class="img-fluid mb-1" width="60">
+            <span>Humidity</span>
+        </div>
+
+        <div class="d-flex flex-column text-center imgs">
+            <img src="assets/images/wind.png" class="img-fluid mb-1" width="60">
+            <span>Wind Speed</span>
+        </div>
+    </div>
+
+</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

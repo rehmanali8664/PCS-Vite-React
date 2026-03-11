@@ -1,0 +1,79 @@
+:root{
+    --color1:#2b2d30;
+}
+
+
+
+
+body{
+    background-color:#282627 ;
+    color: white;
+}
+.color1{
+    background-color: var(--color1);
+}
+.icon-color{
+    color: #6A6969;
+}
+.search-color{
+    background-color: #C2D4D3;
+}
+.card-bg{
+    background-color:#282627;
+    width: 60px;
+    
+
+}
+.card-img{
+    width: 40px;
+}
+.card-bg1{
+    background-color:#282627;
+    width: 160px;
+    padding-bottom: 20px;
+    
+
+}
+.imgs{
+    width: 80px;
+    font-size: 10px;
+}
+
+/* <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Sun</h5>
+    <img src="..." class="card-img-middle" alt="...">
+    <p class="card-text">32</p>
+  </div>
+</div> */
+/* Extra small devices (mobile phones) */
+@media (max-width: 575.98px) {
+  /* Mobile layout */
+.color1{
+    height: 100vh;
+.fsize{
+    font-size: 25px;
+    
+}
+}
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Small phones */
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Tablets */
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Laptop/Desktop */
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  /* Large desktop */
+}
