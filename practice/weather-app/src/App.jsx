@@ -5,6 +5,10 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  function handelClick(){
+    alert("hello");
+
+  }
 
   return (
     <>
@@ -26,6 +30,7 @@ function App() {
           <h1 className="temp">30°C</h1>
           <p>Kuala Lumpur</p>
           <p>Monday</p>
+          <button className='btn btn-primary ' onClick={handelClick}>click me</button>
           <hr />
           <p>
             <i className="bi bi-cloud-drizzle" /> Light Rain
