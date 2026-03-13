@@ -37,7 +37,9 @@ font-weight:bold;
 .brwn-color{
     color: #6A6969;
 }
-
+.img{
+  width: 70%;
+}
 
 /* Extra small devices (mobile phones) */
 @media (max-width: 575.98px) {
@@ -52,7 +54,12 @@ font-weight:bold;
   margin-top: 48px !important;
 
   }  
-  
+  .temp{
+font-size:7vw;
+}
+  .img{
+  width: 40%;
+}
     
 
 }
@@ -67,14 +74,28 @@ font-weight:bold;
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Tablets */
+.temp{
+font-size:4vw;
 }
+
+}
+
 
 /* Large devices (desktops) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Laptop/Desktop */
+  .img{
+  width: 40%;
+}
+.temp{
+font-size:4vw;
+}
 }
 
 /* Extra large devices (large desktops) */
 @media (min-width: 1200px) {
   /* Large desktop */
+  .temp{
+font-size:4vw;
+}
 } 

@@ -1,21 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  function handelClick(){
-    alert("hello");
+  const  [weather,setWeather]=useState();
+  const [value, setValue] = useState(2)
+  const [isloading, setIsloading]=useState(true);
+    function handelClick(){
+      setValue(value+1);
+    }
+    const getWeather=async()=>{
+          const response = await fetch("http://api.weatherapi.com/v1/current.json?key=4c3d9a39384044fcb9993911261203&q=Karachi");
+      const data =await response.json();
+      setWeather(data);
+      setIsloading(false);
+    }
+    useEffect(()=>{
+      getWeather();
+      
+    },[]);
 
-  }
-
+    if(isloading){
+      return(
+        <div className='text-white'>Loading........</div>
+      )
+    }
   return (
     <>
       <div className="container-fluid p-4">
   <div className="row g-4">
     {/* LEFT PANEL */}
-    <div className="col-lg-3">
+    <div className="col-12 col-md-3 col-lg-3">
       <div className="weather-left p-4 h-100">
         <input
           type="text"
@@ -24,13 +38,15 @@ function App() {
         />
         <div className="text-center">
           <img
-            src="/Weather-image.png"
-            className="img-fluid mb-3"
-          />
-          <h1 className="temp">30°C</h1>
-          <p>Kuala Lumpur</p>
+            
+    src={`https:${weather.current.condition.icon}`} 
+    alt={weather.current.condition.text} 
+    className="img-fluid mb-3 img"
+  />
+          <h1 className="temp">{weather.current.temp_c}°C</h1>
+          <p>Quetta</p>
           <p>Monday</p>
-          <button className='btn btn-primary ' onClick={handelClick}>click me</button>
+          
           <hr />
           <p>
             <i className="bi bi-cloud-drizzle" /> Light Rain
@@ -45,17 +61,17 @@ function App() {
           </p>
           <div className="d-flex justify-content-between mt-3">
             <span>
-              <i className="bi bi-water fs-1" /> 83%
+              <i className="bi bi-water fs-1" /> {weather.current.humidity}%
             </span>
             <span>
-              <i className="bi bi-wind fs-1" /> 6 km/h
+              <i className="bi bi-wind fs-1" /> {weather.current.humidity} km/h
             </span>
           </div>
         </div>
       </div>
     </div>
     {/* RIGHT PANEL */}
-    <div className="col-lg-9">
+    <div className="col-12 col-md-9 col-lg-9">
       <div className="weather-right p-4">
         <div className="d-flex gap-3 mb-4">
           <span>Today</span>
