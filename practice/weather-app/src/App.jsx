@@ -9,7 +9,7 @@ function App() {
       setValue(value+1);
     }
     const getWeather=async()=>{
-          const response = await fetch("http://api.weatherapi.com/v1/current.json?key=4c3d9a39384044fcb9993911261203&q=Karachi");
+          const response = await fetch("http://api.weatherapi.com/v1/current.json?key=4c3d9a39384044fcb9993911261203&q=Tehran");
       const data =await response.json();
       setWeather(data);
       setIsloading(false);
